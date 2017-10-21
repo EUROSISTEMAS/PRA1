@@ -56,10 +56,6 @@ public class ResultListAdapter extends BaseAdapter {
         TextView title = (TextView)vp.findViewById(R.id.title);
         title.setText((String) object.get("name"));
 
-       // TextView price = (TextView)vp.findViewById(R.id.price);
-       // title.setText((String) object.get("price"));
-
-
         ImageView  thumbnail=  (ImageView)vp.findViewById(R.id.thumbnail);
         thumbnail.setImageBitmap((Bitmap) object.get("image"));
 
@@ -68,7 +64,8 @@ public class ResultListAdapter extends BaseAdapter {
         // UOC - BEGIN - CODE4
         //
 
-
+        TextView price = (TextView)vp.findViewById(R.id.detail);
+        price.setText((String) object.get("price"));
 
         // UOC - END - CODE4
         // ************************************************************************
